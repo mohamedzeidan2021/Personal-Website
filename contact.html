@@ -4,13 +4,37 @@
     <title>Contact - Mohamed Zeidan</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .homeButtons button {
+    font-family: 'Roboto';
+    padding: 10px 60px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-inline-start: 14px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .homeButtons button:hover {
+        /*background-color: #0056b3;*/
+        transition: .8s ease-in-out;
+        transform: scale(1.1); /* Slightly scale up the button on hover */
+    }
+
+</style>
 <body>
-    <div class="contact-container">
+    <div class="homeButtons">
         <h1>Contact Information</h1>
         <p><strong>Email:</strong> zeidan4mo@gmail.com</p>
         <p><strong>Phone:</strong> +1 (714) 483-9420</p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohamed-zeidan-460927212/"></a>LinkedIn</p>
-        <button class="homeButtons">click</button>
+        <button class="homeButtons" id="counterButton">click</button>
+        <p id="counterButton">Counter: 0</p>
     </div>
+
+<script src="script.js"></script>
 </body>
 </html>

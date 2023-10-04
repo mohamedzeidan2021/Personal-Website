@@ -76,14 +76,11 @@ a {
 }
 
 .homeButtons button:hover {
-    background-color: #0056b3;
+    /*background-color: #0056b3;*/
     transition: .8s ease-in-out;
     transform: scale(1.1); /* Slightly scale up the button on hover */
 }
 
-.homeButtons button:active {
-    background-color: #003e80;
-}
 
 .contact-container {
     font-family: 'Roboto';

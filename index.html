@@ -3,7 +3,9 @@
 <head>
     <title>Mohamed Zeidan</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <style>
+
+    </style>
 </head>
 <body>
     <div>
@@ -15,13 +17,36 @@
             </div>
 
             <div class="homeButtons center">
-                <button><a href="contact.html">Contact</a></button>
-                <button><a href="https://github.com/MohamedZeidan2021">Github</a></button>
-                <button><a href="about.html">About</a></button>
+                <button id="contactButton"><a href="contact.html">Contact</a></button>
+                <button id="githubButton"><a href="https://github.com/MohamedZeidan2021" target="_blank">Github</a></button>
+                <button id="aboutButton"><a href="about.html">About</a></button>
             </div>
+
+            <p id="counterDisplay">Counter: 0</p>
+            <button class="homeButtons" id="counterButton">click</button>
+            <script>
+                // Initialize a counter variable
+                var counter = 0;
+
+                // Find the button element by its class
+                var button = document.getElementById('counterButton');
+
+                // Find the display element by its ID
+                var display = document.getElementById('counterDisplay');
+
+                // Add a click event listener to the button
+                button.addEventListener('click', function() {
+                    // Increment the counter
+                    counter++;
+
+                    // Update the counter display
+                    display.textContent = 'Counter: ' + counter;
+                });
+            </script>
         </div>
     </div>
 
-        
+<script src="script.js"></script>
+
 </body>
 </html>
