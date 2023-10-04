@@ -1,0 +1,76 @@
+html {
+    background-color:antiquewhite;
+}
+
+.homePage {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.pic {
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    min-height: auto;
+    width: 150px;
+}
+
+.name, .underName {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 200%;
+    text-align: center;
+}
+
+.underName {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26.4px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeButtons button {
+    padding: 10px 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.homeButtons button:hover {
+    background-color: #0056b3;
+}
+
+.homeButtons button:active {
+    background-color: #003e80;
+}
+
+.contactButton {
+
+}
+
+.projectButton {
+    margin-left: 20px;
+}
