@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 html {
-    background-color:antiquewhite;
+    background-color:white;
 }
 
 .homePage {
@@ -13,27 +24,28 @@ html {
 }
 
 .pic {
-    background-color: aquamarine;
-    border-radius: 50%;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    background-color: #ddd;
+    border-radius: 100px;
+    display: block;
+    margin: 40px auto 20px;
     min-height: auto;
-    width: 150px;
+    width: 128px;
+
 }
 
 .name, .underName {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 200%;
+    font-family: 'Roboto';
+    font-size: 220%;
     text-align: center;
 }
 
 .underName {
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 200;
     letter-spacing: 0;
-    line-height: 26.4px;
+    line-height: 24px;
     padding-left: 1em;
     padding-right: 1em;
 }
@@ -51,16 +63,18 @@ a {
 }
 
 .homeButtons button {
-    padding: 10px 50px;
+    padding: 10px 60px;
+    font-weight: bold;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
 }
 
 .homeButtons button:hover {
     background-color: #0056b3;
+    transition: .8s;
 }
 
 .homeButtons button:active {
@@ -68,7 +82,7 @@ a {
 }
 
 .contactButton {
-
+    
 }
 
 .projectButton {
