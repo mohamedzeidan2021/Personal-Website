@@ -23,7 +23,7 @@ html {
     width: 100vw;
 }
 
-.pic {
+/*.pic {
     overflow-clip-margin: content-box;
     overflow: clip;
     background-color: #ddd;
@@ -33,16 +33,25 @@ html {
     min-height: auto;
     width: 128px;
 
+} */
+
+.pic {
+    display: block;
+    margin: 0 auto 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .name, .underName {
     font-family: 'Roboto';
-    font-size: 220%;
+    font-size: 300%;
     text-align: center;
 }
 
 .underName {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 200;
     letter-spacing: 0;
     line-height: 24px;
@@ -63,7 +72,7 @@ a {
 }
 
 /* when I click outside button space it doesn't work*/
-.homeButtons button {
+/*.homeButtons button {
     padding: 10px 60px;
     font-weight: bold;
     background-color: #007bff;
@@ -75,13 +84,52 @@ a {
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.homeButtons button:hover {
-    /*background-color: #0056b3;*/
-    transition: .8s ease-in-out;
-    transform: scale(1.1); /* Slightly scale up the button on hover */
+.clickButton {
+    padding: 10px 60px;
+    font-weight: bold;
+    background-color: #1f08e9;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-inline-start: 14px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.homeButtons button:hover {
+    background-color: #0056b3;
+    transition: .8s ease-in-out;
+    transform: scale(1.1);
+}
 
+.clickButton button:hover {
+    background-color: #0056b3;
+    transition: .8s ease-in-out;
+    transform: scale(1.1);
+}
+ */
+
+.homeButtons button, .clickButton {
+    padding: 10px 60px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-inline-start: 14px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.clickButton {
+    background-color: #5806f1;
+}
+
+.homeButtons button:hover, .clickButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Slightly scale up the button on hover */
+}
 .contact-container {
     font-family: 'Roboto';
     text-align: center;
