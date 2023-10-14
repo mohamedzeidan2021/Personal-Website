@@ -35,7 +35,7 @@ aboutElement.addEventListener('mouseover', () => {
 });
 
 // Add a mouseout event listener to reset the background color
-gitElement.addEventListener('mouseout', () => {
+aboutElement.addEventListener('mouseout', () => {
     // Change the background color back to its original color when not hovering
     aboutElement.style.backgroundColor = '#007bff';
 });
@@ -54,4 +54,9 @@ document.getElementById('githubButton').addEventListener('click', () => {
 // Add an event listener for the About button
 document.getElementById('aboutButton').addEventListener('click', () => {
     alert('You clicked the About button!');
+});
+
+//have the fade in effect
+window.addEventListener("load", () => {
+    document.documentElement.classList.add("active");
 });

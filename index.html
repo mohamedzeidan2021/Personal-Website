@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="fade-in">
 <head>
     <title>Mohamed Zeidan</title>
     <link rel="stylesheet" href="style.css">
@@ -8,12 +8,14 @@
     </style>
 </head>
 <body>
-    <div>
-        <div>
+    <div class="page-container">
+        <div class="animation-container" id="animation"></div>
+
+        <div class="content">
             <div class="homePage">
                 <img class="pic" src="/pics/imgpt2.jpg" alt="Self Portrait"> 
                 <h1 class="name">Mohamed Zeidan</h1>
-                <h3 class="underName">Studying Computer Science at University of California, Berkeley</h3>
+                <h3 class="underName">Computer Science @ University of California, Berkeley</h3>
             </div>
 
             <div class="homeButtons center">
@@ -21,32 +23,27 @@
                 <button id="githubButton"><a href="https://github.com/MohamedZeidan2021" target="_blank">Github</a></button>
                 <button id="aboutButton"><a href="about.html">About</a></button>
             </div>
-
-            <p id="counterDisplay">Counter: 0</p>
-            <button class="clickButton" id="counterButton">click</button>
-            <script>
-                // Initialize a counter variable
-                var counter = 0;
-
-                // Find the button element by its class
-                var button = document.getElementById('counterButton');
-
-                // Find the display element by its ID
-                var display = document.getElementById('counterDisplay');
-
-                // Add a click event listener to the button
-                button.addEventListener('click', function() {
-                    // Increment the counter
-                    counter++;
-
-                    // Update the counter display
-                    display.textContent = 'Counter: ' + counter;
-                });
-            </script>
         </div>
     </div>
 
-<script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    VANTA.BIRDS({
+      el: ".animation-container", // Change to the container class
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xfbfcff,
+      speedLimit: 4.00,
+      quantity: 2.00
+    })
+    </script>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
